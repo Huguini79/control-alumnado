@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control del Alumnado</title>
+    <style>
+        .contenedor_principal {
+            width: 400px;
+            margin: 0 auto; /* Centrado horizontal */
+            background-color: rgb(50, 141, 206);
+            border-radius: 50px;
+            padding: 20px;
+        }
+        .contenedor_dentro_del_principal {
+            width: 100px; /* Ancho fijo */
+            margin: 0 auto; /* Centrado horizontal */
+            background-color: rgb(50, 141, 206);
+            padding: 20px;
+        }
+        #boton_registrar:hover {
+            transition: 0.7s;
+            background-color: antiquewhite;
+        }
+        #boton_registrar::after {
+            transition: 0.7s;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <header>
+        <h1>Control del alumnado</h1>
+    </header>
+
+    <div class="contenedor_principal">
+        <label>Introduce el nombre del alumno:</label>
+        <input id="alumno" type="text"><br><br>
+        <div class="contenedor_dentro_del_principal">
+            <button style="border-radius: 5px; width: 100px; height: 40px;" id="boton_registrar">Registrar</button>
+        </div>
+    </div><br><br>
+
+    <label>Alumnos y fechas:</label>
+    <div id="contenido_info_alumno"></div>
+
+</body>
+</html>
